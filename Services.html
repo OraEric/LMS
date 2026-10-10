@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - NWU Library</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<header class="header">
+    <a href="index.html" class="site-logo" style="color:#fff; text-decoration:none; font-size:22px; font-weight:700; display:flex; align-items:center; gap:8px;">
+        <i class="bx bxs-book"></i>
+        NWU Library
+    </a>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="Services.html" class="active">Services</a>
+        <a href="Contact.html">Contact</a>
+    </nav>
+
+    <select class="dropdown" onchange="if(this.value) location = this.value;">
+        <option value="" disabled selected>Login As</option>
+        <option value="index.html">Student</option>
+        <option value="index.html">Librarian</option>
+    </select>
+</header>
+
+<main class="info-page" style="padding: 120px 10% 40px; color:#fff;">
+
+    <section class="info-hero" style="text-align:center; margin-bottom:40px;">
+        <div class="info-icon" style="font-size:50px; color:#38bdf8;">
+            <i class="bx bx-grid-alt"></i>
+        </div>
+
+        <h1 style="font-size:36px; margin:15px 0;">Our Services</h1>
+
+        <p style="font-size:18px; max-width:700px; margin:0 auto; opacity:0.9;">
+            Explore the services provided by the NWU Library Management System
+            to make library operations easier and more efficient.
+        </p>
+    </section>
+
+    <section class="services-grid" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap:25px;">
+
+        <div class="service-card" style="background: rgba(255,255,255,0.1); backdrop-filter:blur(10px); padding:25px; border-radius:12px; border:1px solid rgba(255,255,255,0.2);">
+            <i class="bx bxs-book" style="font-size:32px; color:#38bdf8; margin-bottom:12px; display:block;"></i>
+            <h2 style="margin-bottom:10px;">Book Management</h2>
+            <p style="opacity:0.85; line-height:1.5;">
+                Add, update, view, and manage book records while keeping track
+                of ISBNs, authors, categories, quantities, and availability.
+            </p>
+        </div>
+
+        <div class="service-card" style="background: rgba(255,255,255,0.1); backdrop-filter:blur(10px); padding:25px; border-radius:12px; border:1px solid rgba(255,255,255,0.2);">
+            <i class="bx bx-search-alt" style="font-size:32px; color:#38bdf8; margin-bottom:12px; display:block;"></i>
+            <h2 style="margin-bottom:10px;">Book Search</h2>
+            <p style="opacity:0.85; line-height:1.5;">
+                Quickly find books using criteria such as title, author,
+                ISBN, category, and availability.
+            </p>
+        </div>
+
+        <div class="service-card" style="background: rgba(255,255,255,0.1); backdrop-filter:blur(10px); padding:25px; border-radius:12px; border:1px solid rgba(255,255,255,0.2);">
+            <i class="bx bxs-user-detail" style="font-size:32px; color:#38bdf8; margin-bottom:12px; display:block;"></i>
+            <h2 style="margin-bottom:10px;">Borrower Management</h2>
+            <p style="opacity:0.85; line-height:1.5;">
+                Manage borrower information, registration details, borrowing
+                status, and borrowing history in one centralised system.
+            </p>
+        </div>
+
+        <div class="service-card" style="background: rgba(255,255,255,0.1); backdrop-filter:blur(10px); padding:25px; border-radius:12px; border:1px solid rgba(255,255,255,0.2);">
+            <i class="bx bx-book-add" style="font-size:32px; color:#38bdf8; margin-bottom:12px; display:block;"></i>
+            <h2 style="margin-bottom:10px;">Book Borrowing</h2>
+            <p style="opacity:0.85; line-height:1.5;">
+                Process book loans efficiently by recording borrowers,
+                books, issue dates, and due dates.
+            </p>
+        </div>
+
+        <div class="service-card" style="background: rgba(255,255,255,0.1); backdrop-filter:blur(10px); padding:25px; border-radius:12px; border:1px solid rgba(255,255,255,0.2);">
+            <i class="bx bx-book-reader" style="font-size:32px; color:#38bdf8; margin-bottom:12px; display:block;"></i>
+            <h2 style="margin-bottom:10px;">Book Returns</h2>
+            <p style="opacity:0.85; line-height:1.5;">
+                Record returned books, update their availability, and keep
+                loan information accurate and up to date.
+            </p>
+        </div>
+
+    </section>
+
+</main>
+
+<script src="scripts/app.js"></script>
+
+</body>
+
+</html>

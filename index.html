@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NWU Library Management System</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Services.html">Services</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+
+        <select class="dropdown">
+            <option value="" disabled selected>Login As</option>
+            <option value="student">Student</option>
+            <option value="librarian">Librarian</option>
+        </select>
+
+    </header>
+
+    <div class="background"></div>
+
+    <div class="container">
+
+        <div class="content">
+
+            <h2 class="logo">
+                <i class="bx bxs-book"></i>
+                NWU Library
+            </h2>
+
+            <div class="text-sci">
+
+                <h2>
+                    Welcome!
+                    <br>
+                    <span>To Our NWU Library Website</span>
+                </h2>
+
+                <p>
+                    We are delighted to welcome you to our library website!
+                    Our library is a hub of knowledge and resources, and we
+                    are committed to providing you with the best possible
+                    experience. Whether you are a student, researcher, or
+                    simply a lover of books, we have something for everyone.
+                    Explore our collection, discover new titles, and connect
+                    with our community of readers. We hope you enjoy your visit!
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="logreg-box">
+
+            <div class="form-box login">
+
+                <form action="#">
+
+                    <h2>Sign In</h2>
+
+                    <div class="input-box">
+
+                        <span class="icon">
+                            <i class="bx bxs-user"></i>
+                        </span>
+
+                        <input type="text" required placeholder="User ID / Username">
+
+                        <label>Username / User ID</label>
+
+                    </div>
+
+
+                    <div class="input-box">
+
+                        <span class="icon">
+                            <i class="bx bxs-lock"></i>
+                        </span>
+
+                        <input type="password" required placeholder="Password">
+
+                        <label>Password</label>
+
+                    </div>
+
+
+                    <div class="remember-forgot">
+
+                        <label>
+                            <input type="checkbox">
+                            Remember me
+                        </label>
+
+                        <a href="#">Forgot Password?</a>
+
+                    </div>
+
+
+                    <button type="submit" class="btn">
+                        Sign In
+                    </button>
+
+
+                    <div class="login-register">
+
+                        <p>
+                            Don't have an account?
+                            <a href="#" class="register-link">Sign Up</a>
+                        </p>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+
+            <div class="form-box register">
+
+                <form action="#">
+
+                    <h2>Sign Up</h2>
+
+
+                    <div class="input-box">
+
+                        <span class="icon">
+                            <i class="bx bxs-user"></i>
+                        </span>
+
+                        <input id="username" type="text" required placeholder="Desired User ID">
+
+                        <label>Username / User ID</label>
+
+                    </div>
+
+
+                    <div class="input-box">
+
+                        <span class="icon">
+                            <i class="bx bxs-envelope"></i>
+                        </span>
+
+                        <input id="email" type="email" required placeholder="Email Address">
+
+                        <label>Email</label>
+
+                    </div>
+
+
+                    <div class="input-box">
+
+                        <span class="icon">
+                            <i class="bx bxs-lock"></i>
+                        </span>
+
+                        <input type="password" required placeholder="Password">
+
+                        <label>Password</label>
+
+                    </div>
+
+
+                    <div class="input-box">
+
+                        <span class="icon">
+                            <i class="bx bxs-lock"></i>
+                        </span>
+
+                        <input type="password" required placeholder="Confirm Password">
+
+                        <label>Confirm-Password</label>
+
+                    </div>
+
+
+                    <button type="submit" class="btn">
+                        Sign Up
+                    </button>
+
+
+                    <div class="login-register">
+
+                        <p>
+                            Already have an account?
+                            <a href="#" class="login-link">Sign In</a>
+                        </p>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="scripts/app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Librarian Dashboard | NWU Library</title>
+    <link rel="stylesheet" href="styles/dashboard.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+<aside class="sidebar">
+    <div class="logo">
+        <i class='bx bx-library'></i>
+        <span>NWU Library</span>
+    </div>
+    <div class="profile-small">
+        <div class="profile-icon">
+            <i class='bx bx-user'></i>
+        </div>
+        <div>
+            <h4>Librarian</h4>
+            <span>Library Staff</span>
+        </div>
+    </div>
+    <nav class="sidebar-nav">
+        <a href="#dashboard" class="nav-link active">
+            <i class='bx bxs-dashboard'></i>
+            <span>Dashboard</span>
+        </a>
+        <a href="#books" class="nav-link">
+            <i class='bx bx-book'></i>
+            <span>Books Management</span>
+        </a>
+        <a href="#loans" class="nav-link">
+            <i class='bx bx-book-reader'></i>
+            <span>Loans & Borrowings</span>
+        </a>
+        <a href="#borrowers" class="nav-link">
+            <i class='bx bx-group'></i>
+            <span>Borrowers</span>
+        </a>
+        <a href="#reservations" class="nav-link">
+            <i class='bx bx-calendar'></i>
+            <span>Reservations</span>
+        </a>
+        <a href="#fines" class="nav-link">
+            <i class='bx bx-money'></i>
+            <span>Fines & Payments</span>
+        </a>
+        <a href="#catalogue" class="nav-link">
+            <i class='bx bx-category'></i>
+            <span>Catalogue</span>
+        </a>
+        <a href="#reports" class="nav-link">
+            <i class='bx bx-bar-chart-alt-2'></i>
+            <span>Reports</span>
+        </a>
+        <a href="#audit" class="nav-link">
+            <i class='bx bx-history'></i>
+            <span>Audit Logs</span>
+        </a>
+    </nav>
+    <div class="sidebar-bottom">
+        <a href="index.html" class="logout">
+            <i class='bx bx-log-out'></i>
+            <span>Logout</span>
+        </a>
+    </div>
+</aside>
+
+<main class="main-content">
+    <header class="topbar">
+        <div>
+            <h2>Librarian Dashboard</h2>
+            <p>Manage the NWU Library system</p>
+        </div>
+        <div class="topbar-right">
+            <button class="notification">
+                <i class='bx bx-bell'></i>
+                <span class="notification-dot"></span>
+            </button>
+            <div class="student-profile">
+                <div class="avatar">L</div>
+                <div>
+                    <strong>Librarian</strong>
+                    <small>Library Staff</small>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="dashboard" class="page-section active">
+        <div class="section-heading">
+            <div>
+                <h2>Library Overview</h2>
+                <p>Monitor library activity and manage records.</p>
+            </div>
+        </div>
+        <div class="stats-grid">
+            <div class="stat-card blue">
+                <div class="stat-icon">
+                    <i class='bx bx-book'></i>
+                </div>
+                <div>
+                    <span>Total Book Copies</span>
+                    <h2>0</h2>
+                </div>
+            </div>
+            <div class="stat-card green">
+                <div class="stat-icon">
+                    <i class='bx bx-book-reader'></i>
+                </div>
+                <div>
+                    <span>Active Borrowers</span>
+                    <h2>0</h2>
+                </div>
+            </div>
+            <div class="stat-card orange">
+                <div class="stat-icon">
+                    <i class='bx bx-transfer'></i>
+                </div>
+                <div>
+                    <span>Active Loans</span>
+                    <h2>0</h2>
+                </div>
+            </div>
+            <div class="stat-card red">
+                <div class="stat-icon">
+                    <i class='bx bx-error-circle'></i>
+                </div>
+                <div>
+                    <span>Overdue Loans</span>
+                    <h2>0</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="books" class="page-section" style="display:none;">
+        <div class="section-heading">
+            <h2>Books Management</h2>
+            <p>Add new books, update stock details, or delete catalog items.</p>
+        </div>
+        <div class="section-content"></div>
+    </section>
+
+    <section id="loans" class="page-section" style="display:none;">
+        <div class="section-heading">
+            <h2>Loans & Borrowing Management</h2>
+            <p>Issue new loans, track active borrowings, and process returns.</p>
+        </div>
+        <div class="section-content"></div>
+    </section>
+
+    <section id="borrowers" class="page-section" style="display:none;">
+        <div class="section-heading">
+            <h2>Borrowers Directory</h2>
+            <p>Manage student and staff registered library members.</p>
+        </div>
+        <div class="section-content"></div>
+    </section>
+
+    <section id="reservations" class="page-section" style="display:none;">
+        <div class="section-heading">
+            <h2>Reservations</h2>
+            <p>Manage pending book reservation requests.</p>
+        </div>
+        <div class="section-content">
+            <div style="background:#fff; padding:20px; border-radius:10px; margin-top:20px;">
+                <p style="color:#64748b;">No pending hold requests.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="fines" class="page-section" style="display:none;">
+        <div class="section-heading">
+            <h2>Fines & Payments</h2>
+            <p>View overdue fines and process payments.</p>
+        </div>
+        <div class="section-content"></div>
+    </section>
+
+    <section id="catalogue" class="page-section" style="display:none;">
+        <div class="section-heading">
+            <h2>Library Categories & Publishers</h2>
+            <p>Manage categories, subjects, and publisher metadata.</p>
+        </div>
+        <div style="background:#fff; padding:20px; border-radius:10px; margin-top:20px;">
+            <ul style="line-height:2; color:#334155;">
+                <li><strong>Computer Science</strong> - 1 Title</li>
+                <li><strong>Software Engineering</strong> - 1 Title</li>
+                <li><strong>Database Systems</strong> - 1 Title</li>
+                <li><strong>Mathematics</strong> - 0 Titles</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="reports" class="page-section" style="display:none;">
+        <div class="section-heading">
+            <h2>System Reports</h2>
+            <p>Generate usage analytics and borrowing trends.</p>
+        </div>
+        <div style="background:#fff; padding:20px; border-radius:10px; margin-top:20px;">
+            <p style="color:#64748b;">System reports will appear here.</p>
+        </div>
+    </section>
+
+    <section id="audit" class="page-section" style="display:none;">
+        <div class="section-heading">
+            <h2>Audit Logs</h2>
+            <p>Track administrator actions and security events.</p>
+        </div>
+        <div style="background:#fff; padding:20px; border-radius:10px; margin-top:20px;">
+            <p style="color:#64748b; font-family:monospace;">System audit logs will appear here.</p>
+        </div>
+    </section>
+</main>
+
+<script src="scripts/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - NWU Library</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<header class="header">
+    <a href="index.html" class="site-logo" style="color:#fff; text-decoration:none; font-size:22px; font-weight:700; display:flex; align-items:center; gap:8px;">
+        <i class="bx bxs-book"></i>
+        NWU Library
+    </a>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="Services.html">Services</a>
+        <a href="Contact.html" class="active">Contact</a>
+    </nav>
+
+    <select class="dropdown" onchange="if(this.value) location = this.value;">
+        <option value="" disabled selected>Login As</option>
+        <option value="index.html">Student</option>
+        <option value="index.html">Librarian</option>
+    </select>
+</header>
+
+<main class="info-page" style="padding: 120px 10% 40px; color:#fff;">
+
+    <section class="info-hero" style="text-align:center; margin-bottom:40px;">
+        <div class="info-icon" style="font-size:50px; color:#38bdf8;">
+            <i class="bx bx-envelope"></i>
+        </div>
+
+        <h1 style="font-size:36px; margin:15px 0;">Contact Us</h1>
+
+        <p style="font-size:18px; max-width:700px; margin:0 auto; opacity:0.9;">
+            Have a question or need assistance? Get in touch with the
+            NWU Library team.
+        </p>
+    </section>
+
+    <section class="contact-container" style="background: rgba(255,255,255,0.1); backdrop-filter:blur(10px); padding:40px; border-radius:12px; border:1px solid rgba(255,255,255,0.2); max-width:800px; margin:0 auto;">
+
+        <div class="contact-details">
+
+            <h2 style="margin-bottom:15px;">Get In Touch</h2>
+
+            <p style="opacity:0.85; margin-bottom:25px; line-height:1.6;">
+                If you have a question about the library, need assistance
+                with the system, or would like to report an issue, please
+                contact us using the information below.
+            </p>
+
+            <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap:20px;">
+                <div class="contact-item" style="display:flex; align-items:center; gap:15px;">
+                    <i class="bx bx-envelope" style="font-size:28px; color:#38bdf8;"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p style="opacity:0.85;">library@nwu.ac.za</p>
+                    </div>
+                </div>
+
+                <div class="contact-item" style="display:flex; align-items:center; gap:15px;">
+                    <i class="bx bx-phone" style="font-size:28px; color:#38bdf8;"></i>
+                    <div>
+                        <h3>Phone</h3>
+                        <p style="opacity:0.85;">+27 71 296 7612</p>
+                    </div>
+                </div>
+
+                <div class="contact-item" style="display:flex; align-items:center; gap:15px;">
+                    <i class="bx bx-map" style="font-size:28px; color:#38bdf8;"></i>
+                    <div>
+                        <h3>Location</h3>
+                        <p style="opacity:0.85;">NWU Library, North-West University</p>
+                    </div>
+                </div>
+
+                <div class="contact-item" style="display:flex; align-items:center; gap:15px;">
+                    <i class="bx bx-time-five" style="font-size:28px; color:#38bdf8;"></i>
+                    <div>
+                        <h3>Opening Hours</h3>
+                        <p style="opacity:0.85;">Mon – Fri: 08:00 – 17:00</p>
+                        <p style="opacity:0.85;">Sat: 09:00 – 13:00</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<script src="scripts/app.js"></script>
+
+</body>
+
+</html>
